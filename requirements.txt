@@ -1,6 +1,6 @@
 alabaster
-anaconda-client==1.7.2
-anaconda-navigator==2.0.3
+anaconda-client
+anaconda-navigator
 anaconda-project
 analytics-python==1.4.0
 anyio
