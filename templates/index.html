@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Price prediction</title>
+    </head>
+    <body>
+        <h1>Predict Diamond Price</h1>
+        <p>Enter the below details</p>
+        <form action="/" method="POST">
+            <input type="number" name="carat" placeholder="enter no of carats">
+            <input type="number" name="x" placeholder="enter x value">
+            <input type="number" name="y" placeholder="enter y value">
+            <input type="number" name="z" placeholder="enter z value">
+            <input type="submit">
+        </form>
+
+        {% if mpred %}
+            <p>predicted price : </p> {{ mpred }}
+        {% endif %}
+    </body>
+</html>
